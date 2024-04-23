@@ -42,6 +42,7 @@ while True:
     except KeyError: 
         c.send("Not Found".encode())
 ```
+
 ### SERVER:
 ```
 import socket 
@@ -52,6 +53,7 @@ while True:
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
 ```
+
 ### TRACEOUT COMMAND:
 ```
 from scapy.all import* 
@@ -59,13 +61,19 @@ target = ["www.google.com"]
 result, unans = traceroute(target,maxttl=32) 
 print(result,unans)
 ```
-## Output
-## PING ADDRESS
+
+## Output:
+
+## PING ADDRESS:
+
 ### CLIENT:
 ![image](https://github.com/POZHILANVD/4.Execution_of_NetworkCommends/assets/144870498/5c0707d9-8106-4b10-88a6-747ca2aa52a3)
+
 ### SERVER:
 ![image](https://github.com/POZHILANVD/4.Execution_of_NetworkCommends/assets/144870498/b41721c9-0cd4-440d-b187-2de595993b8d)
+
 ### TRACEOUT COMMAND:
 ![image](https://github.com/POZHILANVD/4.Execution_of_NetworkCommends/assets/144870498/d01c763f-822e-43a2-b817-383d696181e8)
+
 ## Result
 Thus Execution of Network commands Performed 
